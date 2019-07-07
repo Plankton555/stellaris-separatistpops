@@ -1,0 +1,28 @@
+##############################
+# Xenoist Faction
+##############################
+
+xenoist = {
+
+	demand = { # "XENOIST_NO_PURGE"
+		title = "XENOIST_NO_PURGE_TEST"
+		unfulfilled_title = "XENOIST_PURGE"
+		desc = "XENOIST_NO_PURGE_DESC"
+
+		unfulfilled_effect = -25
+		fulfilled_effect = 0.001
+
+		potential = {
+			exists = owner
+		}
+
+		trigger = {
+			owner = {
+				NOR = {
+					has_policy_flag = purge_displacement_only
+					has_policy_flag = purge_allowed
+				}
+			}
+		}
+	}
+}
