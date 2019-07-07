@@ -1,0 +1,8 @@
+﻿l_english:
+ ####################################
+ # Leader Traits
+ ####################################
+
+ # All
+ leader_trait_xenophobe:0 "Xenophobe"
+ leader_trait_xenophobe_desc:2 "This leader dislikes everything alien."
