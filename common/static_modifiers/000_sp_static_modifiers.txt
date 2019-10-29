@@ -1,6 +1,8 @@
 # Per empire size over admin cap
 empire_size_over_cap = {
 	planet_stability_add = -0.4
+	pop_happiness = -0.02
+	pop_government_ethic_attraction = -0.01
 }
 
 # Per empire size (ignores admin cap)
