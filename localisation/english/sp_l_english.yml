@@ -6,3 +6,11 @@
  # All
  leader_trait_xenophobe:0 "Xenophobe"
  leader_trait_xenophobe_desc:2 "This leader dislikes everything alien."
+
+ ####################################
+ # Technology
+ ####################################
+
+ # Empire Management
+ #tech_adaptive_bureaucracy:0 "Adaptive Bureaucracy"
+ #tech_adaptive_bureaucracy_desc:1 "The progress we make calls for a new, nimbler form of administration that may aid rather than hinder us in our pursuits." # The leaps/progress/discoveries we have made demand a new form of administrative system, one that can be shaped by opportunity rather than limit it.
