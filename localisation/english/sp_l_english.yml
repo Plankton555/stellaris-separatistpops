@@ -14,3 +14,5 @@
  # Empire Management
  #tech_adaptive_bureaucracy:0 "Adaptive Bureaucracy"
  #tech_adaptive_bureaucracy_desc:1 "The progress we make calls for a new, nimbler form of administration that may aid rather than hinder us in our pursuits." # The leaps/progress/discoveries we have made demand a new form of administrative system, one that can be shaped by opportunity rather than limit it.
+ tech_information_retrieval_systems:0 "Information Retrieval Systems"
+ tech_information_retrieval_systems_desc:1 "With larger and more diverse databases, we need better information retrieval systems to access and utilise the data coming from all the corners of our empire."
