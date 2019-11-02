@@ -12,10 +12,14 @@ tech_information_retrieval_systems = {
 	weight = @tier2weight1
 
 	modifier = {
-		country_admin_cap_add = 20
+		country_admin_cap_add = 10
 	}
 
 	weight_modifier = {
+		modifier = {
+			factor = 3.0
+			empire_size_over_cap > 5
+		}
 		modifier = {
 			factor = 0.1
 			num_owned_planets < 2
