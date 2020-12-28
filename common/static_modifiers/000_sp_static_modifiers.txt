@@ -1,8 +1,8 @@
 # Per empire size over admin cap
 empire_size_over_cap = {
-	planet_stability_add = -0.3
+	planet_stability_add = -0.10
 	pop_happiness = -0.005
-	pop_government_ethic_attraction = -0.035
+	pop_government_ethic_attraction = -0.040
 }
 
 # Per empire size (ignores admin cap)
@@ -13,3 +13,22 @@ empire_size_over_cap = {
 # 	leader_cost_empire_size_mult = 0.015
 # 	pop_government_ethic_attraction = -0.0025
 # }
+
+faction_approval_very_low = {
+    pop_happiness = -0.6
+}
+
+faction_approval_low = {
+    pop_happiness = -0.25
+}
+
+faction_approval_average = {
+}
+
+faction_approval_high = {
+    pop_happiness = 0.05
+}
+
+faction_approval_very_high = {
+    pop_happiness = 0.1
+}
