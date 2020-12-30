@@ -2,8 +2,8 @@
 		POP_CRIME                                 = 2     # From each pop with happiness (scaled inversely to happiness)
 
 		POP_ETHOS_DIVERGENCE_INTERVAL             = 180   # Number of days until a Pop has a change to diverge from empire ethos
-		POP_ETHOS_DIVERGENCE_RATE_MULT            = 3    # Chance of a pop evaluating its ethics every year
-		POP_CHANGE_FACTION_CHANCE                 = 3     # Once every month a pop has X chance to change faction but only if the pop wants to
+		POP_ETHOS_DIVERGENCE_RATE_MULT            = 0.3   # Chance of a pop evaluating its ethics every year
+		POP_CHANGE_FACTION_CHANCE                 = 0.3   # Once every month a pop has X chance to change faction but only if the pop wants to
 
 		EMPIRE_SIZE_BASE                          = 35    # No penalties at this empire size or below
 		EMPIRE_SIZE_FROM_DISTRICTS                = 0.3   # Per district
