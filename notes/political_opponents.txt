@@ -1,0 +1,8 @@
+If a political party has low approval, make them start propagate for political change. The stronger the faction is, the more they fight.
+
+Each faction has a leader. That leader can be the face of what is happening.
+
+Random events that increase or decrease support for the different political parties. Or just find the define that causes that drift. In general, the ruling party should lose followers to make it dynamic.
+
+Whenever there is some resistance from a faction, do it on a planet based on the followers. Maybe have a pop flag/trait/modifier for making them radicals.
+

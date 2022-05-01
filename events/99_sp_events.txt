@@ -10,10 +10,13 @@ country_event = {
 	# fire_only_once = yes
 
 	trigger = {
+		# TODO should probably call this from yearly pulse or something
 		NOT = { has_country_flag = recent_political_event }
 		# always = no
 		# num_owned_planets > 5
-
+		any_pop_faction = {
+			faction_approval < 0.3
+		}
 	}
 
 	immediate = {
@@ -32,18 +35,24 @@ country_event = {
 		#}
 
 		random_pop_faction = {
-			# limit = { faction_approval < 0.9 }
+			limit = { faction_approval < 0.3 }
 
 			# weights = { (optional – adds weights to affect the chance a specific object is selected)
 			#	base = float
 			#	modifier = { <add/factor = float> <triggers> }
 			#}
 			#<effects>
-			log_error = "gug"
+
+			save_event_target_as = disapproving_faction
 			pop_faction_event = { id = seppop.2 days = 5 }
 		}
 
-		country_event = { id = seppop.3 days = 5 }
+		# country_event = { id = seppop.3 days = 5 }
+
+		random_owned_leader = {
+			limit = { leader_of_faction = event_target:disapproving_faction }
+			leader_event = { id = seppop.3 days = 5 }
+		}
 	}
 }
 
@@ -75,7 +84,7 @@ pop_faction_event = {
 	}
 }
 
-country_event = {
+leader_event = {
 	id = seppop.3
 	title = "seppop.3.name"
 	desc = "seppop.3.desc"
@@ -100,3 +109,11 @@ country_event = {
 		# add_modifier = { modifier = "turned_away_cuddles" days = 365 }
 	}
 }
+
+# Potentially useful things
+
+# has_faction 	Checks if the country has any instance of target faction type (scope: country)
+# Example: has_faction = isolationist
+
+# support 	Checks the faction's support level (scope: pop_faction)
+# Example: support > 0.5
