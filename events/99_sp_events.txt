@@ -1,0 +1,102 @@
+namespace = seppop
+
+##### Political opponents
+
+### Triggering Event
+country_event = {
+	id = seppop.1
+	hide_window = yes
+
+	# fire_only_once = yes
+
+	trigger = {
+		NOT = { has_country_flag = recent_political_event }
+		# always = no
+		# num_owned_planets > 5
+
+	}
+
+	immediate = {
+		set_timed_country_flag = {
+			flag = recent_political_event
+			days = 40
+		}
+		log_error = "huh"
+
+		#random_owned_planet = {
+		#	limit = {
+		#		is_capital = no
+		#	}
+		#	set_planet_flag = has_fox_nest
+		#	save_event_target_as = fox_nest_planet
+		#}
+
+		random_pop_faction = {
+			# limit = { faction_approval < 0.9 }
+
+			# weights = { (optional – adds weights to affect the chance a specific object is selected)
+			#	base = float
+			#	modifier = { <add/factor = float> <triggers> }
+			#}
+			#<effects>
+			log_error = "gug"
+			pop_faction_event = { id = seppop.2 days = 5 }
+		}
+
+		country_event = { id = seppop.3 days = 5 }
+	}
+}
+
+### What
+
+pop_faction_event = {
+	id = seppop.2
+	title = "seppop.2.name"
+	desc = "seppop.2.desc"
+	picture = GFX_evt_warm_barren
+	show_sound = event_alien_nature
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	option = {
+		name = seppop.2.a
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = seppop.2.b
+		ai_chance = {
+			factor = 1
+		}
+		# add_modifier = { modifier = "turned_away_cuddles" days = 365 }
+	}
+}
+
+country_event = {
+	id = seppop.3
+	title = "seppop.3.name"
+	desc = "seppop.3.desc"
+	picture = GFX_evt_warm_barren
+	show_sound = event_alien_nature
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	option = {
+		name = seppop.3.a
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = seppop.3.b
+		ai_chance = {
+			factor = 1
+		}
+		# add_modifier = { modifier = "turned_away_cuddles" days = 365 }
+	}
+}

@@ -1,0 +1,9 @@
+﻿l_english:
+ seppop.2.name: "It followed me home..."
+ seppop.2.desc: "The faction [Root.GetName] are dissatisfied."
+ seppop.2.a: "Awww, cute! Here you go, little cuddly thing."
+ seppop.2.b: "Give away our food? Never!"
+ seppop.3.name: "Debug"
+ seppop.3.desc: "Debug debug"
+ seppop.3.a: "Debug debug debug"
+ seppop.3.b: "Debug debug debug debug"

@@ -1,5 +1,0 @@
-
-### UNREST EVENTS
-@stabilitylevel1 = 20
-@stabilitylevel2 = 30
-@stabilitylevel3 = 40
