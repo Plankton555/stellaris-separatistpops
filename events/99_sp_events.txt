@@ -11,11 +11,12 @@ country_event = {
 
 	trigger = {
 		# TODO should probably call this from yearly pulse or something
-		NOT = { has_country_flag = recent_political_event }
+		#NOT = { has_country_flag = recent_political_event }
 		# always = no
 		# num_owned_planets > 5
 		any_pop_faction = {
-			faction_approval < 0.3
+			#faction_approval < 0.3
+			faction_approval < 0.8
 		}
 	}
 
@@ -24,7 +25,7 @@ country_event = {
 			flag = recent_political_event
 			days = 40
 		}
-		log_error = "huh"
+		log = "the triggering event happened"
 
 		#random_owned_planet = {
 		#	limit = {
@@ -35,7 +36,7 @@ country_event = {
 		#}
 
 		random_pop_faction = {
-			limit = { faction_approval < 0.3 }
+			limit = { faction_approval < 0.8 }
 
 			# weights = { (optional – adds weights to affect the chance a specific object is selected)
 			#	base = float
@@ -46,6 +47,7 @@ country_event = {
 			save_event_target_as = disapproving_faction
 			pop_faction_event = { id = seppop.2 days = 5 }
 		}
+		log = "disapproving_faction [disapproving_faction.GetName]"
 
 		# country_event = { id = seppop.3 days = 5 }
 
@@ -68,6 +70,7 @@ pop_faction_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "The pop_faction_event event was triggered"
 	}
 	option = {
 		name = seppop.2.a
@@ -94,6 +97,7 @@ leader_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		log = "The leader event was triggered"
 	}
 	option = {
 		name = seppop.3.a
